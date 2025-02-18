@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Fly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <div class="wordmark-corner">travel-fly</div>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="#">tours</a>
+                </li>
+                <li>
+                    <a href="#">special offers</a>
+                </li>
+                <li>
+                    <a href="#">blog</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="wordmark-center">travel-fly</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Fugiat aliquid minus nemo sed est.</p>
+        <input type="button" value="READ MORE" class="blue-button">
+        <div class="spacer"></div>
+    </div>
+    <div class="location-cards-wrapper">
+        <div class="location-card israel">
+            <h2>ISRAEL</h2>
+            <h3>from $1000</h3>
+            <input type="button" value="LEARN MORE" class="blue-button">
+        </div>
+        <div class="location-card usa">
+            <h2>U.S.A</h2>
+            <h3>from $1500</h3>
+            <input type="button" value="LEARN MORE" class="blue-button">
+        </div>
+        <div class="location-card austrailia">
+            <h2>AUSTRAILIA</h2>
+            <h3>from $1800</h3>
+            <input type="button" value="LEARN MORE" class="blue-button">
+        </div>
+    </div>
+    <form action="">
+        <h1>Booking Form</h1>
+        <div class="flex-rows">
+            <input type="text" placeholder="name..." name="name" id="name">
+            <input type="text" placeholder="email..." name="email" id="email">
+            <input type="text" placeholder="country..." name="country" id="country">
+            <input type="text" placeholder="hotel..." name="hotel" id="hotel">
+        </div>
+        <div class="flex-column">
+            <div class="row-wrap">
+                <label for="check-in">Check-in</label>
+                <input type="date" name="check-in" id="check-in">
+            </div>
+            
+            <div class="row-wrap">
+                <label for="check-out">Check-out</label>
+                <input type="date" name="check-out" id="check-out">
+            </div>
+            <div class="row-wrap">
+                <label for="adult">Adult</label>
+                <select name="adult" id="adult">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option selected value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">6</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <label for="children">Children</label>
+                <select name="children" id="children">
+                    <option selected value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">6</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <label for="rooms">Rooms</label>
+                <select name="rooms" id="rooms">
+                    <option value="0">0</option>
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">6</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <textarea placeholder="message..." name="message" id="message"></textarea>
+            <input type="button" value="SUBMIT" class="blue-button">
+        </div>
+    </form>
+    <footer>
+        <span class="wordmark-footer">travel-fly</span>
+        <span class="copyright">Copyright 2019 travel-fly.  All rights reserved</span>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

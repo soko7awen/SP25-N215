@@ -1,0 +1,23 @@
+@import "variables.scss";
+@import "structure.scss";
+@import "top-bar.scss";
+@import "content-wrapper.scss";
+@import "black-bar.scss";
+@import "hero.scss";
+@import "news.scss";
+@import "reviews.scss";
+@import "footer.scss";
+
+body {
+    background-color: $primary-dark-color;
+    font-family: 'sans-serif';
+    font-weight: bold;
+    font-stretch: semi-condensed;
+    text-transform:uppercase;
+    font-size: 15px;
+}
+
+a {
+    color: $primary-red;
+    text-decoration: none;
+}

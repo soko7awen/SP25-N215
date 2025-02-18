@@ -1,0 +1,26 @@
+.news {
+    height: $news-height;
+    background-color: $primary-light-color;
+
+    ul {
+        li {
+            .element {
+                width: 201px;
+                .image {
+                    width: 201px;
+                }
+
+                .title-comments {
+                    .title {
+                        font-size: 14px;
+                        line-height: 15px;
+                    }
+                }
+
+                &:hover {
+                    color: $primary-red;
+                }
+            }
+        }
+    }
+}

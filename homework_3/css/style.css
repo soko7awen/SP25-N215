@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../font/gill-sans/Gill Sans.otf");
+}
+@font-face {
+  font-family: "Proxima Nova Extra Condensed";
+  src: url("../font/proxima-nova-condensed/Mark Simonson  Proxima Nova Extra Condensed Regular TheFontsMaster.com.otf");
+}
+body {
+  font-family: "Gill Sans";
+  color: white;
+  font-size: 18px;
+}
+
+.blue-button {
+  display: block;
+  padding: 10px 15px;
+  padding-top: 15px;
+  background-color: #79ADDC;
+  border: none;
+  color: white;
+  line-height: 100%;
+  font-size: 15px;
+}
+.blue-button:hover {
+  background-color: #5f8aaf;
+}
+.blue-button:active {
+  background-color: #79ADDC;
+}
+
+.hero {
+  aspect-ratio: 64/25;
+  width: 100vw;
+  height: auto;
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero nav {
+  display: flex;
+  padding: 4% 8%;
+}
+.hero nav .wordmark-corner {
+  flex-shrink: 0;
+  font-size: 30px;
+}
+.hero nav ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+}
+.hero nav ul li a {
+  padding: 0 30px;
+  font-size: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+.hero .wordmark-center {
+  width: fit-content;
+  margin: 100px auto 0 auto;
+  font-family: "Proxima Nova Extra Condensed";
+  font-size: 60px;
+  color: white;
+}
+.hero p {
+  width: 450px;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 20px;
+}
+.hero .blue-button {
+  margin: 4% auto;
+}
+@media screen and (max-width: 480px) {
+  .hero p {
+    width: 360px;
+  }
+  .hero .spacer {
+    padding-bottom: 3%;
+  }
+}
+
+.israel {
+  background-image: url("../img/locations/israel.png");
+}
+
+.usa {
+  background-image: url("../img/locations/usa.png");
+}
+
+.austrailia {
+  background-image: url("../img/locations/austrailia.png");
+}
+
+.location-cards-wrapper {
+  display: flex;
+  margin-top: -5%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.location-card {
+  aspect-ratio: 59/76;
+  width: 236px;
+  height: auto;
+  margin: 50px 30px 0 30px;
+}
+.location-card h2, .location-card h3 {
+  width: fit-content;
+  font-family: "Proxima Nova Extra Condensed";
+}
+.location-card h2 {
+  margin: 0 auto;
+  padding-top: 25px;
+  font-size: 50px;
+}
+.location-card h3 {
+  margin: 0 auto;
+  font-size: 25px;
+}
+.location-card .blue-button {
+  border-radius: 50px;
+  margin: 75px auto 0 auto;
+}
+
+form {
+  width: 43.23%;
+  margin: 0 auto;
+  color: black;
+}
+form h1 {
+  margin: 40px auto 10px auto;
+}
+form input, form select, form textarea {
+  padding: 18px;
+  box-sizing: border-box;
+  border: cornflowerblue 1px solid;
+  border-radius: 2px;
+  background-color: white;
+}
+form .flex-rows {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+form .flex-rows input {
+  display: block;
+  height: 60px;
+  margin: 10px 12px;
+}
+form .flex-rows #name, form .flex-rows #country {
+  width: 350px;
+  margin-left: 0;
+}
+form .flex-rows #email, form .flex-rows #hotel {
+  flex: 1;
+  margin-right: 0;
+}
+form .flex-column {
+  display: flex;
+  flex-direction: column;
+}
+form .flex-column .row-wrap {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+form .flex-column .row-wrap label {
+  margin-right: 50px;
+  line-height: 60px;
+  width: 76px;
+}
+@media screen and (max-width: 480px) {
+  form .flex-column .row-wrap label {
+    margin-right: 8px;
+  }
+}
+form .flex-column .row-wrap #check-in, form .flex-column .row-wrap #check-out {
+  flex: 1;
+}
+form .flex-column .row-wrap :nth-of-type(2), form .flex-column .row-wrap :nth-of-type(3) {
+  margin-left: 75px;
+}
+@media screen and (max-width: 480px) {
+  form .flex-column .row-wrap :nth-of-type(2), form .flex-column .row-wrap :nth-of-type(3) {
+    margin-left: 5px;
+  }
+}
+form .flex-column #message {
+  height: 200px;
+  margin-bottom: 40px;
+}
+form .flex-column .blue-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 480px) {
+  form {
+    width: 98%;
+  }
+  form .flex-rows input {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  form .flex-rows #name, form .flex-rows #email, form .flex-rows #country, form .flex-rows #hotel {
+    width: 100%;
+  }
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #79ADDC;
+}
+footer .wordmark-footer {
+  font-size: 20px;
+}
+footer .copyright {
+  font-size: 12px;
+}
+footer .socials {
+  display: flex;
+  width: 115px;
+  justify-content: space-between;
+}
+footer .socials a {
+  font-size: 25px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
